@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body style="width: 100vw; height: 100vh">
+    <div
+      style="width: 100%; height: 100%; display: flex; justify-content: center"
+    >
+      <form
+        action="https://preready-unfully-maia.ngrok-free.dev/webhook/send"
+        method="POST"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        "
+      >
+        <label for="fullName">Name</label>
+        <input type="text" name="fullName" placeholder="John Doe" autofocus />
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="john.doe@example.com" />
+        
+        <label for="position">Apply for a position</label>
+        <select name="position">
+          <option value="Web Developer">Web Developer</option>
+          <option value="Web Developer">Mobile Developer</option>
+          <option value="Web Developer">UI/UX Designer</option>
+          <option value="Web Developer">Content Writer</option>
+        </select>
+
+        <input type="file" name="data" accept=".pdf" />
+
+        <button type="submit" style="position: absolute; top: 0; left: 0">
+          send
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
